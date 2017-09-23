@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <a [routerLink]="['']">Home</a>
+    <a [routerLink]="['about']">About</a>
+  </nav>
+  <div class="open" (click)="expandMenu($event)">
+    <span (click)="closeMenu($event)" class="cls"></span>
+    <span>
+        <ul class="sub-menu ">
+            <li>
+                <a href="#about" title="about">Sobre / About</a>
+            </li>
+            <li>
+                <a href="#skills" title="skills">Habilidades / Skills</a>
+            </li>
+            <li>
+                <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
+            </li>
+            <li>
+                <a href="#contact" title="contact">Contato / Contact</a>
+            </li>
+        </ul>
+    </span>
+    <span (click)="closeMenu($event)" class="cls"></span>
+  </div>
+</header>
+<main (click)="closeMenu($event)">
+  <router-outlet></router-outlet>
+</main>

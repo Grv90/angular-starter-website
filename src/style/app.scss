@@ -1,12 +1,24 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // styles in src/style directory are applied to the whole page
+
+
 body {
     background: #0147A7;
     color: #fff;
 }
 a {
     color: #03A9F4;
+}
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: left;
+  text-decoration: none;
+}
+.header__logo_png{
+  float: left;
+  width: 40px;
 }
 .open{
     position: fixed;
@@ -27,7 +39,7 @@ a {
         height: 4px;
         width: 40px;
         border-radius: 40px;
-        background-color: #fff;
+        background-color: #000000;
         position: absolute;
         right: 3px;
         top: 3px;
